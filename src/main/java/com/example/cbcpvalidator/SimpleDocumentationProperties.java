@@ -32,6 +32,6 @@ public class SimpleDocumentationProperties implements Validator {
 
     @Override
     public void validate(Object target, Errors errors) {
-        validated = true;
+        ((SimpleDocumentationProperties)target).validated = true;
     }
 }

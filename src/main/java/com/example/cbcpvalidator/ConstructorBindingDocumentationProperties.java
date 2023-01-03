@@ -34,6 +34,6 @@ public class ConstructorBindingDocumentationProperties implements Validator {
 
     @Override
     public void validate(Object target, Errors errors) {
-        validated = true;
+        ((ConstructorBindingDocumentationProperties)target).validated = true;
     }
 }
